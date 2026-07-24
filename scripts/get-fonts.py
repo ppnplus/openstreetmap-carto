@@ -54,7 +54,6 @@ REGULAR_BOLD = [
     "NotoSansTamilUI",
     "NotoSansTeluguUI",
     "NotoSansThaana",
-    "NotoSansThaiLooped",
     "NotoSerifTibetan",
 ]
 
@@ -94,8 +93,7 @@ REGULAR = [
 # Attempt to download the font from repos in this order
 def findFontUrls(fontName, modifier):
     return [
-        f"https://github.com/notofonts/notofonts.github.io/raw/main/fonts/{fontName}/hinted/ttf/{fontName}-{modifier}.ttf", # Updated to the latest repo to accomodate Thai Looped
-        # f"https://github.com/notofonts/noto-fonts/raw/main/hinted/ttf/{fontName}/{fontName}-{modifier}.ttf",
+        f"https://github.com/notofonts/noto-fonts/raw/main/hinted/ttf/{fontName}/{fontName}-{modifier}.ttf",
         # currently only sourcing from one repo
     ]
 
@@ -147,6 +145,20 @@ downloadToFile(
         "https://github.com/notofonts/noto-cjk/raw/main/Sans/OTF/Japanese/NotoSansCJKjp-Bold.otf"
     ],
     "NotoSansCJKjp-Bold.otf",
+)
+
+# Thai fonts (Looped variant which is similar to standard Thai characters)
+downloadToFile(
+    [
+        "https://github.com/notofonts/notofonts.github.io/raw/main/fonts/NotoSansThaiLooped/hinted/ttf/NotoSansThaiLooped-Regular.ttf"
+    ],
+    "NotoSansThaiLooped-Regular.ttf",
+)
+downloadToFile(
+    [
+        "https://github.com/notofonts/notofonts.github.io/raw/main/fonts/NotoSansThaiLooped/hinted/ttf/NotoSansThaiLooped-Bold.ttf"
+    ],
+    "NotoSansThaiLooped-Bold.ttf",
 )
 
 # Fonts in zipfiles need a temporary directory
