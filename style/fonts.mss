@@ -22,7 +22,7 @@ but there are some exceptions.
 
   - Noto Sans is before all other fonts
 
-  - Noto Sanc CJK JP is placed behind the other fonts because it redefines the
+  - Noto Sans CJK JP is placed behind the other fonts because it redefines the
     Latin script, and their design should not overwrite the standard design.
 
 The used CJK font covers all CJK languages, but defaults to the Japanese
@@ -112,7 +112,7 @@ A regular style.
                 "Noto Sans Tamil UI Regular",
                 "Noto Sans Telugu UI Regular",
                 "Noto Sans Thaana Regular",
-                "Noto Sans Thai UI Regular",
+                "Noto Sans Thai Looped Regular",
                 "Noto Sans Tifinagh Regular",
                 "Noto Sans Vai Regular",
                 "Noto Sans Yi Regular",
@@ -161,7 +161,7 @@ regular text and can be used for emphasis. Fallback is a regular style.
                 "Noto Sans Tamil UI Bold",
                 "Noto Sans Telugu UI Bold",
                 "Noto Sans Thaana Bold",
-                "Noto Sans Thai UI Bold",
+                "Noto Sans Thai Looped Bold",
                 "Noto Sans CJK JP Bold",
 
                 "Noto Serif Tibetan Bold",
