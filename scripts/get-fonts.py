@@ -54,7 +54,7 @@ REGULAR_BOLD = [
     "NotoSansTamilUI",
     "NotoSansTeluguUI",
     "NotoSansThaana",
-    "NotoSansThaiUI",
+    "NotoSansThaiLooped",
     "NotoSerifTibetan",
 ]
 
@@ -94,7 +94,8 @@ REGULAR = [
 # Attempt to download the font from repos in this order
 def findFontUrls(fontName, modifier):
     return [
-        f"https://github.com/notofonts/noto-fonts/raw/main/hinted/ttf/{fontName}/{fontName}-{modifier}.ttf",
+        f"https://github.com/notofonts/notofonts.github.io/raw/main/fonts/{fontName}/hinted/ttf/{fontName}-{modifier}.ttf", # Updated to the latest repo to accomodate Thai Looped
+        # f"https://github.com/notofonts/noto-fonts/raw/main/hinted/ttf/{fontName}/{fontName}-{modifier}.ttf",
         # currently only sourcing from one repo
     ]
 
